@@ -998,6 +998,7 @@
     width: 100%;
     height: 550px;
     background-color: #e6e6e6;
+    z-index: 0;
 }
 .gmapbox .wptb-office-time {
     position: absolute;

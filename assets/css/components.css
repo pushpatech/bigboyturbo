@@ -553,7 +553,8 @@ Ready Components Stylesheet
 }
 .wptb-slider.style2 .swiper-pagination-bullet::after {
     counter-increment: numbers;
-    content: "0"counter(numbers);
+    /* content: "0"counter(numbers); */
+    content: counter(numbers);
     font-family: var(--font-family-base);
     font-size: 385px;
     font-weight: 700;

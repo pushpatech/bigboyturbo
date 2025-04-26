@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="BigBoyTurbo - Car Service & Auto Repair Template">
+    <meta name="author" content="">
+
+    <!-- Favicon and touch Icons -->
+    <!-- <link rel="icon" type="image/x-icon" href="assets/imgs/favicon.ico"> -->
+    <link href="assets/img/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="assets/img/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="assets/img/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="assets/img/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" /> -->
+    <!-- <base href="http://127.0.0.1:5500/"> -->
+
+    <!-- Page Title -->
+    <title>Big Boy Turbo</title>
+
+    <!-- Styles Include -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <img src="assets/img/logo.png" alt="img">
+                <img src="assets/img/logo.png" alt="img" class="wheel">
+            </div>
+            <div class="loading-text">
+                <!-- <img src="assets/img/preloader-logo-text.svg" alt="img">  -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Color Mode Switcher -->
+    <div id="mode_switcher">
+        <span><i class="bi bi-moon-fill"></i></span>
+    </div>
+
+    <!-- Main Header -->
+    <header class="header">
+        <!-- Top Bar -->
+        <div class="header-top">
+            <div class="container-fluid pe-4">
+                <div class="header-top--inner d-none d-xl-flex justify-content-between align-items-center flex-wrap">
+                    <!-- Left Box -->
+                    <div class="left-box d-flex align-items-center">
+                        <ul class="info-list">
+                            <li><a href="mailto:contact@bigboyturbo.com"><span
+                                        class="icon bi bi-envelope-fill"></span>contact@bigboyturbo.com</a></li>
+                            <li><a href="#"><span class="icon bi bi-clock"></span>8.00am - 10.00pm</a></li>
+                            <li><a
+                                    href="https://www.google.com/maps/search/?api=1&query=18.963514822782788,73.02282223928282"><span
+                                        class="icon bi bi-geo-alt-fill"></span>Plot No. 184, Sector 17, Ulwe
+                                    Navi Mumbai – 410206</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Right Box -->
+                    <div class="right-box d-flex align-items-center">
+                        <!-- Social Box -->
+                        <div class="social-box">
+                            <ul>
+                                <!-- <li><a href="https://www.facebook.com/" class="bi bi-facebook"></a></li> -->
+                                <li><a target="_blank" href="https://www.instagram.com/big.boy.turbo/"
+                                        class="bi bi-instagram"></a></li>
+                                <li><a target="_blank" href="https://wa.me/919787437055" class="bi bi-whatsapp"></a>
+                                </li>
+                                <!-- <li><a href="https://www.twitter.com/" class="bi bi-twitter-x"></a></li> -->
+                                <!-- <li><a href="https://www.linkedin.com/" class="bi bi-linkedin"></a></li> -->
+                                <!-- <li><a href="https://www.behance.com/" class="bi bi-behance"></a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- End Main Header -->
+
+    <!-- Main Wrapper-->
+    <main class="wrapper">
+        <!-- Page Header -->
+        <!-- <div class="wptb-page-heading" style="background-image: url('assets/img/background/page-header-bg.jpg');">
+            <div class="container">
+                <div class="wptb-item--inner">
+                    <h2 class="wptb-item--title ">My Account</h2>
+                    <div class="wptb-breadcrumb-wrap">
+                        <ul class="wptb-breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><span>My Account</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- My Account -->
+        <section class="pd-bottom-300">
+            <div class="container">
+
+                <div class="wptb-login-form">
+                    <div class="wptb-form--wrapper">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-10 offset-lg-2 offset-md-1">
+                                <div class="wptb-heading">
+                                    <div class="wptb-item--inner">
+                                        <h1 class="wptb-item--title"> Log In</h1>
+                                    </div>
+                                </div>
+
+                                <form class="wptb-form" action="contact.php" method="post">
+                                    <div class="wptb-form--inner">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 mb-4">
+                                                <div class="form-group">
+                                                    <input type="text" name="name" class="form-control"
+                                                        placeholder="User Name or E-mail Address" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 mb-4">
+                                                <div class="form-group">
+                                                    <input type="password" name="password" class="form-control"
+                                                        placeholder="Password">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12 col-lg-12">
+                                                <div class="form-group">
+                                                    <input type="checkbox" name="remmeber">
+                                                    <label for="remmeber" class="text-capitalize">Remmeber
+                                                        Password</label>
+                                                </div>
+
+                                                <div class="wptb-item--button mt-4">
+                                                    <button class="btn-two white" type="submit">
+                                                        <div class="btn-wrap">
+                                                            <span class="text-first"> Login </span>
+                                                            <span class="text-second"> <i class="bi bi-plus"></i>
+                                                            </span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer style1">
+        <!-- Footer Bottom Part -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-inner">
+                    <div class="copyright">
+                        <p>&copy;Copyright 2025 <a href="https://bigboyturbo.com">BigBoyTurbo</a>.
+                            All
+                            rights reserved</p>
+                    </div>
+                    <div class="social-box">
+                        <ul>
+                            <!-- <li><a href="https://www.facebook.com/" class="bi bi-facebook"></a></li>
+                        <li><a href="https://www.instagram.com/" class="bi bi-instagram"></a></li>
+                        <li><a href="https://www.linkedin.com/" class="bi bi-linkedin"></a></li>
+                        <li><a href="https://www.behance.com/" class="bi bi-behance"></a></li> -->
+                            <li><a target="_blank" href="https://www.instagram.com/big.boy.turbo/"
+                                    class="bi bi-instagram"></a></li>
+                            <li><a target="_blank" href="https://wa.me/919787437055" class="bi bi-whatsapp"></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-bottom">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Term of Use</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Core JS -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Framework -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- WOW Scroll Effect -->
+    <script src="plugins/wow/wow.min.js"></script>
+
+    <!-- Swiper Slider -->
+    <script src="plugins/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Odometer Counter -->
+    <script src="plugins/odometer/appear.js"></script>
+    <script src="plugins/odometer/odometer.js"></script>
+
+    <!-- Fancybox -->
+    <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+
+    <!-- Flatpickr -->
+    <script src="plugins/flatpickr/flatpickr.min.js"></script>
+
+    <!-- Nice Select -->
+    <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
+
+    <!-- Theme Custom JS -->
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/pricetable-toggler.js"></script>
+</body>
+
+</html>
