@@ -72,3 +72,14 @@ fetch('./src/app/layout/header.html')
             'assets/js/pricetable-toggler.js'
         ]);
     });
+function scrollToSection(event, sectionId) {
+    event.preventDefault();  // 🔥 this stops the href="#" jump
+
+    const element = document.getElementById(sectionId);
+    if (element) {
+        element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+}
