@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="Big Boy Turbo">
+    <meta name="author" content="">
+
+    <!-- Favicon and touch Icons -->
+    <!-- <link href="assets/img/favicon.png" rel="shortcut icon" type="image/png"> -->
+    <link href="assets/img/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="assets/img/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="assets/img/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="assets/img/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Page Title -->
+    <title>Big Boy Turbo</title>
+
+    <!-- Styles Include -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- Header Wrapper-->
+    <div id="header"></div>
+
+    <!-- Main Wrapper-->
+    <main class="wrapper">
+        <!-- Page Header -->
+        <div class="wptb-page-heading" style="background-image: url('assets/img/background/page-header-bg.jpg');">
+            <div class="container">
+                <div class="wptb-item--inner">
+                    <h2 class="wptb-item--title ">Contact Us</h2>
+                    <div class="wptb-breadcrumb-wrap">
+                        <ul class="wptb-breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><span>Contact Us</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Us -->
+        <section class="pd-bottom-300">
+            <div class="container">
+                <div class="wptb-office-address mr-bottom-90">
+                    <div class="row">
+                        <div class="col-md-4 pe-md-0">
+                            <div class="widget">
+                                <h2 class="widget-title">Phone No</h2>
+
+                                <div class="wptb-office">
+                                    <div class="wptb-item--inner">
+                                        <div class="wptb-item--subtitle">
+                                            Call Us Anytime
+                                        </div>
+                                        <h5 class="wptb-item--title"><a href="tel:+12345677345">+91 978 743 7055</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 p-md-0">
+                            <div class="widget">
+                                <h2 class="widget-title">Email</h2>
+
+                                <div class="wptb-office">
+                                    <div class="wptb-item--inner">
+                                        <div class="wptb-item--subtitle">
+                                            SEND US MAIL
+                                        </div>
+                                        <h5 class="wptb-item--title"><a
+                                                href="mailto:contact@bigboyturbo.com">contact@bigboyturbo.com</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 ps-md-0">
+                            <div class="widget">
+                                <h2 class="widget-title">Address</h2>
+
+                                <div class="wptb-office">
+                                    <div class="wptb-item--inner">
+                                        <div class="wptb-item--subtitle">
+                                            VISIT OUR WORKSHOP
+                                        </div>
+                                        <h5 class="wptb-item--title"><a href="#">Plot No. 184, Sector 17, Ulwe Navi
+                                                Mumbai – 410206</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gmapbox wow fadeInUp">
+                    <div id="googleMap" class="map"></div>
+
+                    <div class="wptb-office-time">
+                        <div class="wptb-item--inner">
+                            <div class="wptb-item">
+                                <span class="wptb-item--day">Sunday</span> <span class="wptb-item--time">9am -
+                                    7pm</span>
+                            </div>
+                            <div class="wptb-item holiday">
+                                <span class="wptb-item--day">Monday</span> <span class="wptb-item--time">Closed</span>
+                            </div>
+                            <div class="wptb-item">
+                                <span class="wptb-item--day">Tuesday</span> <span class="wptb-item--time">9am -
+                                    7pm</span>
+                            </div>
+                            <div class="wptb-item">
+                                <span class="wptb-item--day">Wednesday</span> <span class="wptb-item--time">9am -
+                                    7pm</span>
+                            </div>
+                            <div class="wptb-item">
+                                <span class="wptb-item--day">Thursday</span> <span class="wptb-item--time">9am -
+                                    7pm</span>
+                            </div>
+                            <div class="wptb-item">
+                                <span class="wptb-item--day">Friday</span> <span class="wptb-item--time">9am -
+                                    7pm</span>
+                            </div>
+                            <div class="wptb-item">
+                                <span class="wptb-item--day">Saturday</span> <span class="wptb-item--time">9am -
+                                    7pm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wptb-contact-form-two mr-top-100">
+                    <div class="wptb-form--wrapper">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-6">
+                                <div class="wptb-heading">
+                                    <div class="wptb-item--inner">
+                                        <h6 class="wptb-item--subtitle">
+                                            SEND US MAIL
+                                        </h6>
+                                        <h1 class="wptb-item--title"> Feel Free To Ask Anything
+                                            For Car Servicing</h1>
+                                        <div class="wptb-item--divider"></div>
+                                        <div class="wptb-item--description">
+                                            Bring back the shine to your car with our premium wash and care services.
+                                            Fast, professional, and detailed to perfection for your satisfaction.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-7 col-md-6">
+                                <form class="wptb-form" action="contact.php" method="post">
+                                    <div class="wptb-form--inner">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 mb-4">
+                                                <div class="form-group">
+                                                    <input type="text" name="name" class="form-control"
+                                                        placeholder="Name*" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 mb-4">
+                                                <div class="form-group">
+                                                    <input type="email" name="email" class="form-control"
+                                                        placeholder="E-mail*" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 mb-4">
+                                                <div class="form-group">
+                                                    <input type="text" name="subject" class="form-control"
+                                                        placeholder="Subject">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12 col-lg-12 mb-4">
+                                                <div class="form-group">
+                                                    <textarea name="message" class="form-control"
+                                                        placeholder="Text"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12 col-lg-12">
+                                                <div class="wptb-item--button">
+                                                    <button class="btn-two white" type="submit">
+                                                        <div class="btn-wrap">
+                                                            <span class="text-first"> Send Mail </span>
+                                                            <span class="text-second"> <i class="bi bi-plus"></i>
+                                                            </span>
+                                                        </div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Google Map Calling -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // Initialize the map
+        var map = L.map('googleMap').setView([18.963514822782788, 73.02282223928282], 16);
+
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Custom car icon
+        // var carIcon = L.icon({
+        //     iconUrl: 'https://cdn-icons-png.flaticon.com/512/743/743007.png',  // Example car icon, you can change
+        //     iconSize: [50, 50], // size of the icon
+        //     iconAnchor: [25, 50], // point of the icon which will correspond to marker's location
+        //     popupAnchor: [0, -50] // point from which the popup should open relative to the iconAnchor
+        // });
+
+        // Add marker
+        var marker = L.marker([18.963514822782788, 73.02282223928282]).addTo(map).bindPopup('Big Boy Turbo Premium Car Washing Center')
+            .openPopup();
+
+        // Directly add click event to marker
+        marker.on('click', function () {
+            window.open('https://www.google.com/maps/search/?api=1&query=18.963514822782788,73.02282223928282', '_blank');
+        });
+
+    </script>
+
+    <!-- Footer Wrapper-->
+    <div id="footer"></div>
+
+
+    <!-- JavaScript to load external HTML -->
+    <script>
+        fetch("src/app/layout/header.html").then(res => res.text()).then(data => {
+            document.getElementById("header").innerHTML = data;
+        });
+        fetch("src/app/layout/footer.html").then(res => res.text()).then(data => {
+            document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+    <!-- Core JS -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Framework -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- WOW Scroll Effect -->
+    <script src="plugins/wow/wow.min.js"></script>
+
+    <!-- Swiper Slider -->
+    <script src="plugins/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Odometer Counter -->
+    <script src="plugins/odometer/appear.js"></script>
+    <script src="plugins/odometer/odometer.js"></script>
+
+    <!-- Fancybox -->
+    <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+
+    <!-- Flatpickr -->
+    <script src="plugins/flatpickr/flatpickr.min.js"></script>
+
+    <!-- Nice Select -->
+    <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
+
+    <!-- Theme Custom JS -->
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/pricetable-toggler.js"></script>
+    <!-- Google Map Calling -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // Initialize the map
+        var map = L.map('googleMap').setView([18.963514822782788, 73.02282223928282], 16);
+
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Custom car icon
+        // var carIcon = L.icon({
+        //     iconUrl: 'https://cdn-icons-png.flaticon.com/512/743/743007.png',  // Example car icon, you can change
+        //     iconSize: [50, 50], // size of the icon
+        //     iconAnchor: [25, 50], // point of the icon which will correspond to marker's location
+        //     popupAnchor: [0, -50] // point from which the popup should open relative to the iconAnchor
+        // });
+
+        // Add marker
+        var marker = L.marker([18.963514822782788, 73.02282223928282]).addTo(map).bindPopup('Big Boy Turbo Premium Car Washing Center')
+            .openPopup();
+
+        // Directly add click event to marker
+        marker.on('click', function () {
+            window.open('https://www.google.com/maps/search/?api=1&query=18.963514822782788,73.02282223928282', '_blank');
+        });
+
+    </script>
+    <!-- <script>
+        // Initialize the map
+        var map = L.map('googleMap').setView([18.963514822782788, 73.02282223928282], 16); // your coordinates
+
+        // Load and display tile layers on the map
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Add a marker
+        L.marker([18.963514822782788, 73.02282223928282]).addTo(map)
+            .bindPopup('Big Boy Turbo Premium Car Washing Center')
+            .openPopup();
+
+        // When marker clicked, redirect to Google Maps
+        marker.on('click', function () {
+            window.open('https://www.google.com/maps/search/?api=1&query=18.963514822782788,73.02282223928282', '_blank');
+        });
+
+        map.on('click', function () {
+            window.open('https://www.google.com/maps/search/?api=1&query=18.963514822782788,73.02282223928282', '_blank');
+        });
+    </script> -->
+    <!-- <script src="assets/js/map.js"></script>
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyBIp6X1Wj2pPVqJ6sPIsWLUSUaMAfDVYxI"></script> -->
+</body>
+
+</html>
