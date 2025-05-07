@@ -1,9 +1,9 @@
 /*
-Theme Name: BigBoyTurbo - Car Service & Auto Repair Template
+Theme Name: BigBoyTurbo - BigBoyTurbo - Premium Car Washing Center
 Version: 1.0
 Author: WPThemeBooster
 Author URL: 
-Description: BigBoyTurbo - Car Service & Auto Repair Template
+Description: BigBoyTurbo - BigBoyTurbo - Premium Car Washing Center
 */
 /*	IE 10 Fix*/
 
